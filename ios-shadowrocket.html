@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadowrocket 下载与配置 - iOS 教程</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>Shadowrocket 下载与配置</h1>
+            <p>适用于 iPhone / iPad 的下载、订阅与代理设置图文教程</p>
+            <nav class="main-nav">
+                <a href="index.html">首页</a>
+                <a href="android.html">Android</a>
+                <a href="windows.html">Windows</a>
+                <a href="linux.html">Linux</a>
+                <a href="macos.html">macOS</a>
+                <a href="ios.html" class="active">iOS</a>
+                <a href="usage.html">使用教程</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content ios-flow">
+        <section>
+            <h2>下载说明</h2>
+            <p>Shadowrocket 是 iOS 上常见的代理客户端。中国区 App Store 通常无法直接下载，建议使用非国区 Apple ID，或先参考 <a href="ios.html">iOS 主页面</a>中的共享 ID 下载方式。</p>
+
+            <div class="download-box">
+                <h3>官方下载</h3>
+                <p>如果你已有可用的非国区 Apple ID，可以直接前往 App Store 下载：</p>
+                <div class="download-links">
+                    <a href="https://apps.apple.com/us/app/shadowrocket/id932747118" target="_blank">App Store</a>
+                    <a href="https://doc.theojs.cn/serve/antiwall/shadowrocket" target="_blank">原始教程来源</a>
+                </div>
+            </div>
+
+            <div class="tip-box">
+                <strong>查看方式：</strong> 大屏设备下图片会以较小宽度展示，点击图片即可放大查看细节。
+            </div>
+        </section>
+
+        <section>
+            <h2>图文步骤</h2>
+
+            <div class="step-box">
+                <span class="step-number">1</span>
+                <strong>添加订阅节点</strong>
+                <p>打开 Shadowrocket，点击右上角 <code>+</code>，类型选择 <code>Subscribe</code>，在 URL 中粘贴订阅地址，备注可填写节点来源名称，然后保存。</p>
+            </div>
+
+            <div class="guide-gallery">
+                <div class="screenshot-card">
+                    <img src="static/shadowrocket-tutorial-1.webp" alt="Shadowrocket 添加 Subscribe 订阅" class="zoomable-image">
+                    <p class="screenshot-caption">图 1：添加节点时选择 <code>Subscribe</code>，填写订阅 URL 后保存。</p>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <span class="step-number">2</span>
+                <strong>进入订阅设置</strong>
+                <p>打开右下角“设置”，找到“订阅”选项，进入后可以配置订阅更新行为。</p>
+            </div>
+
+            <div class="guide-gallery">
+                <div class="screenshot-card">
+                    <img src="static/shadowrocket-tutorial-2.webp" alt="Shadowrocket 设置页面中的订阅选项" class="zoomable-image">
+                    <p class="screenshot-caption">图 2：在设置页面进入“订阅”。</p>
+                </div>
+                <div class="screenshot-card">
+                    <img src="static/shadowrocket-tutorial-3.webp" alt="Shadowrocket 订阅更新设置" class="zoomable-image">
+                    <p class="screenshot-caption">图 3：建议开启“打开时更新”，需要时再开启“自动后台更新”。</p>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <span class="step-number">3</span>
+                <strong>返回首页查看节点</strong>
+                <p>订阅导入完成后，回到首页即可看到订阅分组和节点列表。先观察节点是否正常显示，再进行后续选择。</p>
+            </div>
+
+            <div class="guide-gallery">
+                <div class="screenshot-card">
+                    <img src="static/shadowrocket-tutorial-4.webp" alt="Shadowrocket 首页显示订阅和节点" class="zoomable-image">
+                    <p class="screenshot-caption">图 4：导入完成后，首页会显示订阅分组和可用节点。</p>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <span class="step-number">4</span>
+                <strong>选择节点并开启代理</strong>
+                <p>先选中一个可用节点，再点击顶部开关启用代理。建议先做连通性测试，优先选择延迟较低的节点。</p>
+            </div>
+
+            <div class="guide-gallery">
+                <div class="screenshot-card">
+                    <img src="static/shadowrocket-tutorial-5.webp" alt="Shadowrocket 选中节点并启用代理" class="zoomable-image">
+                    <p class="screenshot-caption">图 5：选中节点后，打开顶部开关即可启用代理。</p>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <span class="step-number">5</span>
+                <strong>设置全局路由</strong>
+                <p>进入“全局路由”后，推荐新手选择“配置”，即按规则分流。这样国内流量通常直连，国外流量走代理，更适合日常使用。</p>
+            </div>
+
+            <div class="guide-gallery">
+                <div class="screenshot-card">
+                    <img src="static/shadowrocket-tutorial-6.webp" alt="Shadowrocket 全局路由设置为配置" class="zoomable-image">
+                    <p class="screenshot-caption">图 6：全局路由推荐使用“配置”模式。</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>使用建议</h2>
+            <div class="tip-box">
+                <strong>新手建议：</strong> 优先使用订阅导入，不建议手动逐个添加节点。
+            </div>
+            <div class="tip-box">
+                <strong>路由建议：</strong> 日常使用优先选择“全局路由 → 配置”。
+            </div>
+            <div class="warning-box">
+                <strong>注意：</strong> 如果节点无法连接，优先尝试更新订阅、切换节点，或更换延迟更低的线路。
+            </div>
+        </section>
+
+        <div class="page-nav">
+            <a href="ios.html">← 返回 iOS 教程</a>
+            <a href="usage.html">通用使用教程 →</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>本教程仅供学习交流使用</p>
+        </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox-close" id="lightboxClose" aria-label="关闭">×</button>
+        <img id="lightboxImage" src="" alt="">
+    </div>
+
+    <script>
+        (function () {
+            var lightbox = document.getElementById("lightbox");
+            var lightboxImage = document.getElementById("lightboxImage");
+            var lightboxClose = document.getElementById("lightboxClose");
+            var images = document.querySelectorAll(".zoomable-image");
+
+            function closeLightbox() {
+                lightbox.classList.remove("is-open");
+                lightbox.setAttribute("aria-hidden", "true");
+                lightboxImage.src = "";
+                lightboxImage.alt = "";
+            }
+
+            images.forEach(function (image) {
+                image.addEventListener("click", function () {
+                    lightboxImage.src = image.src;
+                    lightboxImage.alt = image.alt;
+                    lightbox.classList.add("is-open");
+                    lightbox.setAttribute("aria-hidden", "false");
+                });
+            });
+
+            lightboxClose.addEventListener("click", closeLightbox);
+            lightbox.addEventListener("click", function (event) {
+                if (event.target === lightbox) {
+                    closeLightbox();
+                }
+            });
+
+            document.addEventListener("keydown", function (event) {
+                if (event.key === "Escape") {
+                    closeLightbox();
+                }
+            });
+        })();
+    </script>
+</body>
+</html>

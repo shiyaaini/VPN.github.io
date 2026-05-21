@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android 使用教程 - Surfboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>Android 使用教程</h1>
+            <p>在 Android 设备上使用 Surfboard 导入订阅并开启代理</p>
+            <nav class="main-nav">
+                <a href="index.html">首页</a>
+                <a href="android.html" class="active">Android</a>
+                <a href="windows.html">Windows</a>
+                <a href="linux.html">Linux</a>
+                <a href="macos.html">macOS</a>
+                <a href="ios.html">iOS</a>
+                <a href="usage.html">使用教程</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content android-flow">
+        <section>
+            <h2>客户端说明</h2>
+            <p>Android 平台推荐使用 <strong>Surfboard</strong>。它是一款常见的安卓代理客户端，支持通过订阅链接导入节点，并提供规则分流、节点切换和基础测速能力。</p>
+
+            <div class="download-box">
+                <h3>官方下载</h3>
+                <p>请前往 Surfboard 的 GitHub Releases 页面下载最新安卓版安装包：</p>
+                <div class="download-links">
+                    <a href="https://github.com/getsurfboard/surfboard/releases" target="_blank">GitHub Releases</a>
+                </div>
+            </div>
+
+            <div class="download-section">
+                <h3>本地备份下载</h3>
+                <p class="muted">为了防止官方仓库后续删包，已经在站点内保留了几份 APK 备份。一般用户优先下载 <code>universal</code> 或 <code>arm64-v8a</code> 版本。</p>
+                <div class="download-links">
+                    <a href="app/mobile-universal-release.apk" download>universal</a>
+                    <a href="app/mobile-arm64-v8a-release.apk" download>arm64-v8a</a>
+                    <a href="app/mobile-armeabi-v7a-release.apk" download>armeabi-v7a</a>
+                    <a href="app/mobile-x86-release.apk" download>x86</a>
+                    <a href="app/mobile-x86_64-release.apk" download>x86_64</a>
+                </div>
+                <p class="muted">版本选择建议：大多数近年的安卓手机选择 <code>arm64-v8a</code>；不确定时直接下载 <code>universal</code>；<code>x86</code> 和 <code>x86_64</code> 更常见于模拟器环境。</p>
+            </div>
+
+            <div class="tip-box">
+                <strong>下载建议：</strong> 优先下载最新稳定版本的 <code>apk</code> 安装包。如果 GitHub 下载速度较慢，可使用你站内其他页面已经整理的 GitHub 加速方式。
+            </div>
+
+            <div class="tip-box">
+                <strong>图文说明：</strong> 下面接入的是官方教程里“从零开始”之后更关键的几张图。大屏设备下会缩小显示，点击图片即可放大查看。
+            </div>
+        </section>
+
+        <section>
+            <h2>安装步骤</h2>
+
+            <div class="step-box">
+                <span class="step-number">1</span>
+                <strong>下载 APK</strong>
+                <p>你可以直接从上方的本地备份下载，或者打开 Surfboard 的 Releases 页面下载最新版本。若不确定机型架构，优先选择 <code>universal</code>。</p>
+            </div>
+
+            <div class="step-box">
+                <span class="step-number">2</span>
+                <strong>允许安装未知应用</strong>
+                <p>如果系统提示无法安装，请在手机设置中允许浏览器或文件管理器安装未知来源应用，然后重新安装。</p>
+            </div>
+
+            <div class="step-box">
+                <span class="step-number">3</span>
+                <strong>打开 Surfboard</strong>
+                <p>安装完成后启动 Surfboard，首次打开时按提示授予必要权限。</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>导入订阅</h2>
+            <p>推荐通过订阅链接导入节点，不建议新手手动逐条添加配置。</p>
+
+            <div class="step-box">
+                <span class="step-number">1</span>
+                <strong>获取订阅链接</strong>
+                <p>先登录你的机场后台，复制订阅地址。如果还没有订阅来源，可以先查看本站的<a href="usage.html">通用使用教程</a>。</p>
+            </div>
+
+            <div class="step-box">
+                <span class="step-number">2</span>
+                <strong>在 Surfboard 中导入</strong>
+                <p>进入配置页面，点击右下角 <code>+</code> 后，可以看到多种导入方式。新手不建议“从零开始”手动写配置，更推荐直接通过 URL 导入。</p>
+            </div>
+
+            <div class="guide-gallery">
+                <div class="screenshot-card">
+                    <img src="static/surfboard-guide-1-from-scratch.webp" alt="Surfboard 从零开始" class="zoomable-image">
+                    <p class="screenshot-caption">图 1：这是“从零开始”界面，适合手动创建配置，不推荐新手使用。</p>
+                </div>
+                <div class="screenshot-card">
+                    <img src="static/surfboard-guide-2-from-url.webp" alt="Surfboard 从 URL 导入" class="zoomable-image">
+                    <p class="screenshot-caption">图 2：更推荐使用“从 URL 导入”，直接导入订阅链接。</p>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <span class="step-number">3</span>
+                <strong>更新订阅</strong>
+                <p>导入完成后，手动更新一次订阅，确保节点列表已经成功拉取到最新内容。</p>
+            </div>
+
+            <div class="guide-gallery">
+                <div class="screenshot-card">
+                    <img src="static/surfboard-guide-3-import-url.webp" alt="Surfboard 粘贴 URL 导入订阅" class="zoomable-image">
+                    <p class="screenshot-caption">图 3：在弹窗中粘贴订阅 URL，确认后完成导入。</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>选择节点并启动</h2>
+
+            <div class="step-box">
+                <span class="step-number">1</span>
+                <strong>选择节点</strong>
+                <p>在节点列表中优先选择延迟较低、连接稳定的线路。一般情况下，日常使用建议优先选择新加坡、美国、日本等可用节点。</p>
+            </div>
+
+            <div class="guide-gallery">
+                <div class="screenshot-card">
+                    <img src="static/surfboard-guide-4-select-node.webp" alt="Surfboard 选择代理节点" class="zoomable-image">
+                    <p class="screenshot-caption">图 4：导入完成后，进入代理页面选择一个可用节点。</p>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <span class="step-number">2</span>
+                <strong>启用代理</strong>
+                <p>点击 Surfboard 中的启动或连接按钮，首次启用时系统会提示创建 VPN 连接，点击允许即可。</p>
+            </div>
+
+            <div class="guide-gallery">
+                <div class="screenshot-card">
+                    <img src="static/surfboard-guide-5-start-proxy.png" alt="Surfboard 启动代理" class="zoomable-image">
+                    <p class="screenshot-caption">图 5：点击启动按钮后，允许创建 VPN，即可开始使用代理。</p>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <span class="step-number">3</span>
+                <strong>验证是否生效</strong>
+                <p>启动后，打开浏览器访问 Google、YouTube 或 ChatGPT，确认代理已经正常工作。</p>
+            </div>
+
+            <div class="tip-box">
+                <strong>模式建议：</strong> 日常使用优先选择规则模式或配置模式，不建议长期全局代理，除非你明确知道自己的需求。
+            </div>
+        </section>
+
+        <section>
+            <h2>常见问题</h2>
+
+            <div class="warning-box">
+                <strong>⚠️ 安装失败？</strong>
+                <p>请确认下载的是完整的 APK 文件，并检查是否已允许当前安装来源安装未知应用。</p>
+            </div>
+
+            <div class="warning-box">
+                <strong>⚠️ 导入订阅失败？</strong>
+                <p>常见原因包括：订阅链接复制不完整、机场服务异常、网络不可用，或订阅已过期。</p>
+            </div>
+
+            <div class="warning-box">
+                <strong>⚠️ 启动后无法联网？</strong>
+                <p>建议先切换节点，再检查代理模式是否正确。如果所有节点都不可用，通常是订阅或机场本身出现问题。</p>
+            </div>
+        </section>
+
+        <div class="page-nav">
+            <a href="index.html">← 返回首页</a>
+            <a href="windows.html">Windows 教程 →</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>本教程仅供学习交流使用</p>
+        </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox-close" id="lightboxClose" aria-label="关闭">×</button>
+        <img id="lightboxImage" src="" alt="">
+    </div>
+
+    <script>
+        (function () {
+            var lightbox = document.getElementById("lightbox");
+            var lightboxImage = document.getElementById("lightboxImage");
+            var lightboxClose = document.getElementById("lightboxClose");
+            var images = document.querySelectorAll(".zoomable-image");
+
+            function closeLightbox() {
+                lightbox.classList.remove("is-open");
+                lightbox.setAttribute("aria-hidden", "true");
+                lightboxImage.src = "";
+                lightboxImage.alt = "";
+            }
+
+            images.forEach(function (image) {
+                image.addEventListener("click", function () {
+                    lightboxImage.src = image.src;
+                    lightboxImage.alt = image.alt;
+                    lightbox.classList.add("is-open");
+                    lightbox.setAttribute("aria-hidden", "false");
+                });
+            });
+
+            lightboxClose.addEventListener("click", closeLightbox);
+            lightbox.addEventListener("click", function (event) {
+                if (event.target === lightbox) {
+                    closeLightbox();
+                }
+            });
+
+            document.addEventListener("keydown", function (event) {
+                if (event.key === "Escape") {
+                    closeLightbox();
+                }
+            });
+        })();
+    </script>
+</body>
+</html>

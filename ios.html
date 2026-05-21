@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iOS 安装教程 - Clash Verge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>iOS 使用教程</h1>
+            <p>在 iOS 设备上使用 Shadowrocket 配合订阅</p>
+            <nav class="main-nav">
+                <a href="index.html">首页</a>
+                <a href="android.html">Android</a>
+                <a href="windows.html">Windows</a>
+                <a href="linux.html">Linux</a>
+                <a href="macos.html">macOS</a>
+                <a href="ios.html" class="active">iOS</a>
+                <a href="usage.html">使用教程</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content ios-flow">
+        <section>
+            <h2>iOS 上的代理选择</h2>
+            <p>Clash Verge 本身没有 iOS 原生客户端。在 iOS 设备上，推荐使用 <strong>Shadowrocket</strong> 配合机场订阅使用。Shadowrocket 是 iOS 上知名的代理工具，支持导入常见的订阅格式。</p>
+
+            <div class="warning-box">
+                <strong>⚠️ 重要说明：</strong> Shadowrocket 为付费软件，在中国区 App Store 售价约 ¥3.00。如果你不想付费，可以考虑使用<strong>共享 ID</strong>方式获取（即使用他人已购账号下载，但请注意账号安全风险）。
+            </div>
+
+            <div class="download-section">
+                <h3>Shadowrocket 下载与配置教程</h3>
+                <p class="muted">如果你已经拿到非国区 Apple ID，或者已经成功安装 Shadowrocket，可以直接查看单独整理的下载与配置图文页面。</p>
+                <div class="page-actions">
+                    <a href="ios-shadowrocket.html" class="btn">查看下载与配置教程</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>方式一：使用共享 ID 下载（免费）</h2>
+            <p>如果你想免费使用 Shadowrocket，可以借用他人已购买过该应用的 Apple ID 下载。下面按照你提供的视频和图文步骤整理。</p>
+
+            <div class="download-section">
+                <h3>共享 ID 来源</h3>
+                <p class="muted">以下网站可作为共享 ID 信息来源，但可用时间未知，内容也可能随时失效，请自行判断风险。</p>
+                <div class="proxy-list">
+                    <div class="proxy-card">
+                        <a href="https://shadow.starbox.blog/" target="_blank">shadow.starbox.blog</a>
+                    </div>
+                    <div class="proxy-card">
+                        <a href="https://fanqiangnan.com/appleid.html" target="_blank">fanqiangnan.com/appleid.html</a>
+                    </div>
+                    <div class="proxy-card">
+                        <a href="https://www.bing.com/search?q=shadowrocket%E5%85%B1%E4%BA%AB%E8%B4%A6%E5%8F%B7" target="_blank">Bing 搜索：shadowrocket 共享账号</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-container">
+                <video controls preload="metadata">
+                    <source src="static/one.mp4" type="video/mp4">
+                    你的浏览器不支持视频播放，请下载后查看。
+                </video>
+                <p class="video-caption">视频：iOS 共享 ID 下载 Shadowrocket 演示</p>
+            </div>
+
+            <div class="step-box">
+                <span class="step-number">1</span>
+                <strong>打开 App Store</strong>
+                <p>在 iPhone 主屏幕上找到并打开 App Store。整个流程都只在 App Store 中进行，不要进入“设置”里切换账号。</p>
+            </div>
+
+            <div class="screenshot-card">
+                <img src="static/step1.png" alt="打开 App Store" class="zoomable-image">
+                <p class="screenshot-caption">图 1：先打开 App Store。</p>
+            </div>
+
+            <div class="step-box">
+                <span class="step-number">2</span>
+                <strong>点击右上角头像</strong>
+                <p>进入 App Store 后，点击右上角头像，进入账号页面。</p>
+            </div>
+
+            <div class="screenshot-card">
+                <img src="static/step2.png" alt="点击 App Store 右上角头像" class="zoomable-image">
+                <p class="screenshot-caption">图 2：点击 App Store 右上角头像。</p>
+            </div>
+
+            <div class="step-box">
+                <span class="step-number">3</span>
+                <strong>退出当前 App Store 账号</strong>
+                <p>在账号页面向下滑动到底部，点击“退出登录”。这里只退出 App Store 登录状态，不会退出你手机“设置”里的 iCloud 账号。</p>
+            </div>
+
+            <div class="screenshot-card">
+                <img src="static/step3.png" alt="退出 App Store 登录" class="zoomable-image">
+                <p class="screenshot-caption">图 3：向下滑动到底部，点击退出登录。</p>
+            </div>
+
+            <div class="step-box">
+                <span class="step-number">4</span>
+                <strong>使用共享 ID 登录</strong>
+                <p>退出后，点击“通过 Apple ID 登录”，输入你找到的共享 ID 和密码。</p>
+            </div>
+
+            <div class="screenshot-card">
+                <img src="static/step4.png" alt="通过 Apple ID 登录" class="zoomable-image">
+                <p class="screenshot-caption">图 4：点击“通过 Apple ID 登录”。</p>
+            </div>
+
+            <div class="step-box">
+                <span class="step-number">5</span>
+                <strong>遇到安全验证时选择“其他选项”</strong>
+                <p>如果登录时出现 Apple ID 安全验证页面，不要继续走设备验证，按图示点击“其他选项”，再根据后续提示处理。</p>
+            </div>
+
+            <div class="screenshot-card">
+                <img src="static/step5.png" alt="Apple ID 安全验证时点击其他选项" class="zoomable-image">
+                <p class="screenshot-caption">图 5：如果出现安全验证页，优先点击“其他选项”。</p>
+            </div>
+
+            <div class="step-box">
+                <span class="step-number">6</span>
+                <strong>搜索 Shadowrocket 并下载</strong>
+                <p>成功登录共享 ID 后，在 App Store 搜索 <code>shadowrocket</code>，找到应用后点击“获取”或价格按钮下载。</p>
+            </div>
+
+            <div class="screenshot-card">
+                <img src="static/step6.png" alt="搜索 Shadowrocket 并点击获取" class="zoomable-image">
+                <p class="screenshot-caption">图 6：搜索 shadowrocket，然后点击获取或价格按钮下载。</p>
+            </div>
+
+            <div class="step-box">
+                <span class="step-number">7</span>
+                <strong>下载完成后换回自己的账号</strong>
+                <p>下载完成后，立即在 App Store 中退出共享 ID，重新登录你自己的 Apple ID。Shadowrocket 安装完成后可以继续正常使用。</p>
+            </div>
+
+            <div class="warning-box">
+                <strong>⚠️ 安全提示：</strong>
+                <ul style="margin-top: 10px; padding-left: 20px;">
+                    <li>共享 ID 仅用于 App Store 下载，切勿在“设置”中登录 iCloud，否则可能导致数据丢失或账号被锁</li>
+                    <li>不要修改共享 ID 的密码</li>
+                    <li>不建议在共享 ID 的已购项目中购买任何内购</li>
+                    <li>下载完成后尽快换回自己的 Apple ID</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>方式二：直接购买（推荐）</h2>
+            <p>如果你希望支持开发者并且长期使用，建议直接购买 Shadowrocket。</p>
+            <ol>
+                <li>打开 App Store，切换到非中国区商店（如果中国区下架了）</li>
+                <li>搜索 "Shadowrocket"</li>
+                <li>点击购买（约 $3.99 美元）</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Shadowrocket 订阅配置</h2>
+            <p>下载并安装 Shadowrocket 后，配置步骤与 Windows、Linux、macOS 基本一致：</p>
+
+            <div class="step-box">
+                <span class="step-number">1</span>
+                <strong>添加订阅</strong>
+                <p>打开 Shadowrocket，点击左上角"+"按钮，选择"订阅"类型。</p>
+            </div>
+
+            <div class="step-box">
+                <span class="step-number">2</span>
+                <strong>粘贴订阅链接</strong>
+                <p>将你的机场订阅链接粘贴到 URL 输入框中，点击完成。</p>
+            </div>
+
+            <div class="step-box">
+                <span class="step-number">3</span>
+                <strong>更新并选择节点</strong>
+                <p>在配置列表中长按订阅，点击"更新"。更新完成后，选择合适的节点。</p>
+            </div>
+
+            <div class="step-box">
+                <span class="step-number">4</span>
+                <strong>启动代理</strong>
+                <p>回到 Shadowrocket 主界面，点击顶部的开关启用代理。首次使用时会提示添加 VPN 配置，点击允许。</p>
+            </div>
+
+            <div class="tip-box">
+                <strong>💡 提示：</strong> 如果你想在 iOS 上获得更好的体验，也可以考虑使用其他支持 Clash 订阅的 App，如 Surge、Quantumult X 等。
+            </div>
+        </section>
+
+        <section>
+            <h2>常见问题</h2>
+
+            <div class="warning-box">
+                <strong>⚠️ 共享 ID 不可用？</strong>
+                <p>共享 ID 可能存在多人同时使用导致密码被改、账号被锁等情况。如果无法登录，请尝试其他共享 ID 源，或直接购买正版。</p>
+            </div>
+
+            <div class="warning-box">
+                <strong>⚠️ 无法下载 App？</strong>
+                <p>如果 App Store 提示"此应用不再提供"，说明该应用已从你所在地区的商店下架。此时需要切换到其他地区的 Apple ID。</p>
+            </div>
+
+            <div class="warning-box">
+                <strong>⚠️ VPN 配置添加失败？</strong>
+                <p>iOS 14 及以上系统需要在"设置 → 隐私与安全性"中允许 VPN 配置。如果仍然失败，重启设备后再试。</p>
+            </div>
+        </section>
+
+        <div class="page-nav">
+            <a href="macos.html">← macOS 安装教程</a>
+            <a href="usage.html">使用教程 →</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>本教程仅供学习交流使用</p>
+        </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox-close" id="lightboxClose" aria-label="关闭">×</button>
+        <img id="lightboxImage" src="" alt="">
+    </div>
+
+    <script>
+        (function () {
+            var lightbox = document.getElementById("lightbox");
+            var lightboxImage = document.getElementById("lightboxImage");
+            var lightboxClose = document.getElementById("lightboxClose");
+            var images = document.querySelectorAll(".zoomable-image");
+
+            function closeLightbox() {
+                lightbox.classList.remove("is-open");
+                lightbox.setAttribute("aria-hidden", "true");
+                lightboxImage.src = "";
+                lightboxImage.alt = "";
+            }
+
+            images.forEach(function (image) {
+                image.addEventListener("click", function () {
+                    lightboxImage.src = image.src;
+                    lightboxImage.alt = image.alt;
+                    lightbox.classList.add("is-open");
+                    lightbox.setAttribute("aria-hidden", "false");
+                });
+            });
+
+            lightboxClose.addEventListener("click", closeLightbox);
+            lightbox.addEventListener("click", function (event) {
+                if (event.target === lightbox) {
+                    closeLightbox();
+                }
+            });
+
+            document.addEventListener("keydown", function (event) {
+                if (event.key === "Escape") {
+                    closeLightbox();
+                }
+            });
+        })();
+    </script>
+</body>
+</html>

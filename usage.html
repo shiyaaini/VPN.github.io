@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>通用使用教程 - Clash Verge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>通用使用教程</h1>
+            <p>适用于 Windows、Linux、macOS 的 Clash Verge 订阅配置与节点选择指南</p>
+            <nav class="main-nav">
+                <a href="index.html">首页</a>
+                <a href="android.html">Android</a>
+                <a href="windows.html">Windows</a>
+                <a href="linux.html">Linux</a>
+                <a href="macos.html">macOS</a>
+                <a href="ios.html">iOS</a>
+                <a href="usage.html" class="active">使用教程</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        <section>
+            <div class="tip-box platform-note">
+                <strong>适用范围：</strong> 本页中的导入订阅、更新节点、选择线路和启动代理步骤，适用于 Windows、Linux、macOS 三个平台的 Clash Verge 客户端。
+            </div>
+        </section>
+
+        <section>
+            <h2>1. 获取加速机场</h2>
+            <p>在使用 Clash Verge 之前，你需要先获取一个机场订阅链接。以下是推荐的加速机场：</p>
+
+            <div class="download-box">
+                <h3>推荐机场</h3>
+                <ul style="margin-top: 15px; padding-left: 20px;">
+                    <li style="margin-bottom: 10px;"><strong>狗狗加速器：</strong><a href="https://down.dginv.click/#/register?code=R4ynDyBS" target="_blank" style="color: white;">点击注册</a></li>
+                    <li style="margin-bottom: 10px;"><strong>云兔 Cloud（推荐）：</strong><a href="https://vip.yuntu.buzz/#/register?code=F8kjgW7J" target="_blank" style="color: white;">点击注册</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>2. 获取订阅链接</h2>
+            <p>注册并登录机场后，按照以下步骤获取订阅链接：</p>
+
+            <div class="step-box">
+                <span class="step-number">1</span>
+                <strong>登录机场后台</strong>
+                <p>使用你的账号密码登录到机场网站后台。</p>
+            </div>
+
+            <div class="step-box">
+                <span class="step-number">2</span>
+                <strong>复制订阅链接</strong>
+                <p>在用户后台找到订阅管理或复制订阅链接的选项，点击复制按钮获取完整的订阅 URL。</p>
+            </div>
+
+            <div class="tip-box">
+                <strong>💡 提示：</strong> 订阅链接通常是一串以 <code>https://</code> 开头的 URL，请完整复制不要遗漏任何字符。
+            </div>
+
+            <div class="screenshot-card">
+                <img src="static/image1.png" alt="机场后台获取订阅链接示意图">
+                <p class="screenshot-caption">图 1：在机场后台找到订阅入口并复制订阅链接。</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>3. 导入订阅到 Clash Verge</h2>
+
+            <div class="step-box">
+                <span class="step-number">1</span>
+                <strong>打开 Clash Verge</strong>
+                <p>启动 Clash Verge 客户端，进入主界面。</p>
+            </div>
+
+            <div class="step-box">
+                <span class="step-number">2</span>
+                <strong>添加订阅</strong>
+                <p>在左侧菜单中找到"订阅"或"Profiles"选项，点击添加新的订阅配置。</p>
+            </div>
+
+            <div class="step-box">
+                <span class="step-number">3</span>
+                <strong>粘贴订阅链接</strong>
+                <p>将复制的订阅链接粘贴到 URL 输入框中，点击确认或导入按钮。</p>
+            </div>
+
+            <div class="step-box">
+                <span class="step-number">4</span>
+                <strong>更新订阅</strong>
+                <p>导入成功后，点击更新按钮获取最新的节点信息。</p>
+            </div>
+
+            <div class="screenshot-card">
+                <img src="static/image2.png" alt="Clash Verge 导入订阅示意图">
+                <p class="screenshot-caption">图 2：在 Clash Verge 中导入订阅链接。</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>4. 选择节点</h2>
+
+            <div class="step-box">
+                <span class="step-number">1</span>
+                <strong>查看可用节点</strong>
+                <p>订阅更新后，你将看到所有可用的服务器节点列表。</p>
+            </div>
+
+            <div class="tip-box">
+                <strong>💡 如何选择节点？</strong>
+                <p>选择节点时建议考虑以下因素：</p>
+                <ul style="margin-top: 10px; padding-left: 20px;">
+                    <li><strong>延迟：</strong>选择延时（Ping）较低的节点，通常连接更稳定</li>
+                    <li><strong>地理位置：</strong>根据你的使用场景选择
+                        <ul style="margin-top: 5px; padding-left: 20px;">
+                            <li>使用 ChatGPT：推荐新加坡 → 美国 → 日本</li>
+                            <li>游戏加速：根据游戏服务器所在区域选择</li>
+                            <li>视频流媒体：选择对应区域的节点</li>
+                        </ul>
+                    </li>
+                    <li><strong>负载：</strong>避免选择负载过高的节点</li>
+                </ul>
+            </div>
+
+            <div class="warning-box">
+                <strong>⚠️ 注意：</strong> 如果某个节点连接失败或速度很慢，建议尝试切换到其他节点。
+            </div>
+
+            <div class="screenshot-card">
+                <img src="static/image3.png" alt="Clash Verge 节点延迟测试示意图">
+                <p class="screenshot-caption">图 3：优先选择延迟更低、连接更稳定的节点。</p>
+            </div>
+
+            <div class="screenshot-card">
+                <img src="static/image4.png" alt="Clash Verge 选择节点示意图">
+                <p class="screenshot-caption">图 4：选中合适节点后即可用于后续连接。</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>5. 启动代理</h2>
+
+            <div class="step-box">
+                <span class="step-number">1</span>
+                <strong>启用系统代理</strong>
+                <p>在 Clash Verge 主界面中，点击"启动"或"连接"按钮启用系统代理。</p>
+            </div>
+
+            <div class="step-box">
+                <span class="step-number">2</span>
+                <strong>验证连接</strong>
+                <p>启用后，打开浏览器访问 <a href="https://www.google.com" target="_blank">Google</a> 或 <a href="https://chat.openai.com" target="_blank">ChatGPT</a> 验证连接是否正常。</p>
+            </div>
+
+            <div class="tip-box">
+                <strong>💡 推荐节点选择：</strong>
+                <p>根据不同的使用场景，建议的节点优先级为：</p>
+                <ul style="margin-top: 10px; padding-left: 20px;">
+                    <li>ChatGPT：新加坡节点 > 美国节点 > 日本节点</li>
+                    <li>YouTube/Netflix：根据目标内容区域选择对应节点</li>
+                    <li>游戏加速：选择延迟最低的节点</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>6. 常见问题</h2>
+
+            <div class="warning-box">
+                <strong>⚠️ 订阅更新失败？</strong>
+                <p>如果订阅更新失败，请检查：</p>
+                <ul style="margin-top: 10px; padding-left: 20px;">
+                    <li>订阅链接是否正确（可尝试重新复制）</li>
+                    <li>网络连接是否正常</li>
+                    <li>机场服务是否可用（可能是机场被封）</li>
+                </ul>
+            </div>
+
+            <div class="warning-box">
+                <strong>⚠️ 节点连接超时？</strong>
+                <p>如果所有节点都连接失败，可能是：</p>
+                <ul style="margin-top: 10px; padding-left: 20px;">
+                    <li>本地网络问题（尝试重启路由器）</li>
+                    <li>机场服务中断（联系机场客服）</li>
+                    <li>订阅已过期（续费后重新获取链接）</li>
+                </ul>
+            </div>
+
+            <div class="warning-box">
+                <strong>⚠️ 速度很慢？</strong>
+                <p>如果速度不理想，尝试：</p>
+                <ul style="margin-top: 10px; padding-left: 20px;">
+                    <li>切换到其他节点</li>
+                    <li>选择负载较低的节点</li>
+                    <li>更换机场服务</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="page-nav">
+            <a href="macos.html">← macOS 安装教程</a>
+            <a href="index.html">返回首页</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>本教程仅供学习交流使用</p>
+        </div>
+    </footer>
+</body>
+</html>

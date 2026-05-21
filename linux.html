@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux 安装教程 - Clash Verge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>Linux 安装教程</h1>
+            <p>在 Linux 系统上安装 Clash Verge</p>
+            <nav class="main-nav">
+                <a href="index.html">首页</a>
+                <a href="android.html">Android</a>
+                <a href="windows.html">Windows</a>
+                <a href="linux.html" class="active">Linux</a>
+                <a href="macos.html">macOS</a>
+                <a href="ios.html">iOS</a>
+                <a href="usage.html">使用教程</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        <section>
+            <h2>下载 Clash Verge</h2>
+            <p>Clash Verge 提供多种 Linux 发行版的安装包，包括 .deb、.rpm 和 .AppImage 格式。</p>
+
+            <div class="download-box">
+                <h3>官方下载</h3>
+                <p>前往 GitHub releases 页面下载对应你系统的安装包：</p>
+                <div class="download-links">
+                    <a href="https://github.com/clash-verge-rev/clash-verge-rev/releases" target="_blank">GitHub Releases</a>
+                </div>
+            </div>
+
+            <div class="download-section">
+                <h3>Linux 直链下载</h3>
+                <p class="muted">版本来源于你提供的文档，当前为 `v2.5.1`。</p>
+                <p><strong>DEB 包（Debian 系）</strong></p>
+                <div class="download-links">
+                    <a href="https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.1/Clash.Verge_2.5.1_amd64.deb" target="_blank">64 位 DEB</a>
+                    <a href="https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.1/Clash.Verge_2.5.1_arm64.deb" target="_blank">ARM64 DEB</a>
+                    <a href="https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.1/Clash.Verge_2.5.1_armhf.deb" target="_blank">ARMv7 DEB</a>
+                </div>
+                <p><strong>RPM 包（RedHat 系）</strong></p>
+                <div class="download-links">
+                    <a href="https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.1/Clash.Verge-2.5.1-1.x86_64.rpm" target="_blank">64 位 RPM</a>
+                    <a href="https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.1/Clash.Verge-2.5.1-1.aarch64.rpm" target="_blank">ARM64 RPM</a>
+                    <a href="https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.1/Clash.Verge-2.5.1-1.armhfp.rpm" target="_blank">ARMv7 RPM</a>
+                </div>
+            </div>
+
+            <div class="download-section">
+                <h3>GitHub 下载加速</h3>
+                <p class="muted">GitHub 下载慢时，可先打开下面任一加速站，再粘贴 Linux 安装包链接生成下载地址。</p>
+                <div class="proxy-list">
+                    <div class="proxy-card">
+                        <a href="https://www.moretools.app/zh-CN/github-proxy" target="_blank">MoreTools GitHub Proxy</a>
+                    </div>
+                    <div class="proxy-card">
+                        <a href="https://ghproxy.net/" target="_blank">ghproxy.net</a>
+                    </div>
+                    <div class="proxy-card">
+                        <a href="https://gh-proxy.com/" target="_blank">gh-proxy.com</a>
+                    </div>
+                    <div class="proxy-card">
+                        <a href="https://ghproxy.homeboyc.cn/" target="_blank">ghproxy.homeboyc.cn</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>安装方式</h2>
+
+            <div class="step-box">
+                <span class="step-number">1</span>
+                <strong>Ubuntu / Debian 系统</strong>
+                <p>下载 .deb 文件后，使用以下命令安装：</p>
+                <pre style="background: #f1f5f9; padding: 15px; border-radius: 8px; overflow-x: auto; margin: 15px 0;">sudo dpkg -i clash-verge_*.deb
+sudo apt-get install -f</pre>
+            </div>
+
+            <div class="step-box">
+                <span class="step-number">2</span>
+                <strong>Fedora / RHEL / CentOS 系统</strong>
+                <p>下载 .rpm 文件后，使用以下命令安装：</p>
+                <pre style="background: #f1f5f9; padding: 15px; border-radius: 8px; overflow-x: auto; margin: 15px 0;">sudo rpm -i clash-verge-*.rpm</pre>
+            </div>
+
+            <div class="step-box">
+                <span class="step-number">3</span>
+                <strong>AppImage 便携版（适用于所有发行版）</strong>
+                <p>下载 .AppImage 文件后，赋予执行权限即可运行：</p>
+                <pre style="background: #f1f5f9; padding: 15px; border-radius: 8px; overflow-x: auto; margin: 15px 0;">chmod +x Clash.Verge-*.AppImage
+./Clash.Verge-*.AppImage</pre>
+            </div>
+        </section>
+
+        <section>
+            <h2>使用命令行安装（可选）</h2>
+            <p>如果你使用的是 Arch Linux 或其衍生发行版（如 Manjaro），可以使用 AUR 安装：</p>
+            <pre style="background: #f1f5f9; padding: 15px; border-radius: 8px; overflow-x: auto; margin: 15px 0;">yay -S clash-verge-rev-bin</pre>
+        </section>
+
+        <section>
+            <div class="tip-box platform-note">
+                <strong>下一步：</strong> 安装完成后，订阅导入、节点选择和启动代理流程与 Windows、macOS 相同，直接参考<a href="usage.html">通用图文使用教程</a>。
+            </div>
+        </section>
+
+        <section>
+            <h2>常见问题</h2>
+
+            <div class="warning-box">
+                <strong>⚠️ 依赖问题？</strong>
+                <p>如果遇到依赖问题，请确保你的系统已经更新到最新状态。对于 Ubuntu/Debian 系统，运行 <code>sudo apt update && sudo apt upgrade</code>。</p>
+            </div>
+
+            <div class="warning-box">
+                <strong>⚠️ 无法启动？</strong>
+                <p>如果程序无法启动，尝试从终端运行以查看错误信息：<code>clash-verge</code></p>
+            </div>
+        </section>
+
+        <div class="page-nav">
+            <a href="windows.html">← Windows 安装教程</a>
+            <a href="macos.html">macOS 安装教程 →</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>本教程仅供学习交流使用</p>
+        </div>
+    </footer>
+</body>
+</html>

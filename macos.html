@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>macOS 安装教程 - Clash Verge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>macOS 安装教程</h1>
+            <p>在 macOS 系统上安装 Clash Verge</p>
+            <nav class="main-nav">
+                <a href="index.html">首页</a>
+                <a href="android.html">Android</a>
+                <a href="windows.html">Windows</a>
+                <a href="linux.html">Linux</a>
+                <a href="macos.html" class="active">macOS</a>
+                <a href="ios.html">iOS</a>
+                <a href="usage.html">使用教程</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        <section>
+            <h2>下载 Clash Verge</h2>
+            <p>Clash Verge 支持 macOS 11 (Big Sur) 及以上版本。</p>
+
+            <div class="download-box">
+                <h3>官方下载</h3>
+                <p>前往 GitHub releases 页面下载 macOS 安装包：</p>
+                <div class="download-links">
+                    <a href="https://github.com/clash-verge-rev/clash-verge-rev/releases" target="_blank">GitHub Releases</a>
+                </div>
+            </div>
+
+            <div class="download-section">
+                <h3>macOS 直链下载</h3>
+                <p class="muted">版本来源于你提供的文档，当前为 `v2.5.1`。</p>
+                <div class="download-links">
+                    <a href="https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.1/Clash.Verge_2.5.1_aarch64.dmg" target="_blank">Apple 芯片</a>
+                    <a href="https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.1/Clash.Verge_2.5.1_x64.dmg" target="_blank">Intel 芯片</a>
+                </div>
+            </div>
+
+            <div class="download-section">
+                <h3>GitHub 下载加速</h3>
+                <p class="muted">如果 `dmg` 下载速度较慢，可先打开下面任一加速站，再粘贴下载直链。</p>
+                <div class="proxy-list">
+                    <div class="proxy-card">
+                        <a href="https://www.moretools.app/zh-CN/github-proxy" target="_blank">MoreTools GitHub Proxy</a>
+                    </div>
+                    <div class="proxy-card">
+                        <a href="https://ghproxy.net/" target="_blank">ghproxy.net</a>
+                    </div>
+                    <div class="proxy-card">
+                        <a href="https://gh-proxy.com/" target="_blank">gh-proxy.com</a>
+                    </div>
+                    <div class="proxy-card">
+                        <a href="https://ghproxy.homeboyc.cn/" target="_blank">ghproxy.homeboyc.cn</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tip-box">
+                <strong>💡 提示：</strong> 如果你使用 Apple Silicon (M1/M2/M3) 芯片的 Mac，请下载 arm64 版本以获得最佳性能。
+            </div>
+        </section>
+
+        <section>
+            <h2>安装步骤</h2>
+
+            <div class="step-box">
+                <span class="step-number">1</span>
+                <strong>安装应用</strong>
+                <p>下载 .dmg 文件后，双击打开并将 Clash Verge 拖拽到 Applications 文件夹中。</p>
+            </div>
+
+            <div class="step-box">
+                <span class="step-number">2</span>
+                <strong>打开应用</strong>
+                <p>在 Applications 文件夹中找到 Clash Verge 并双击打开。如果是首次打开，macOS 可能会提示"无法验证开发者"，此时需要到系统设置中允许运行。</p>
+            </div>
+
+            <div class="step-box">
+                <span class="step-number">3</span>
+                <strong>允许应用运行</strong>
+                <p>如果遇到安全提示，前往 系统设置 → 隐私与安全性 → 滚动到最底部点击"仍要打开"。</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Homebrew 安装（可选）</h2>
+            <p>如果你使用 Homebrew 包管理器，也可以通过命令行安装：</p>
+            <pre style="background: #f1f5f9; padding: 15px; border-radius: 8px; overflow-x: auto; margin: 15px 0;">brew install --cask clash-verge-rev</pre>
+        </section>
+
+        <section>
+            <div class="tip-box platform-note">
+                <strong>下一步：</strong> 安装完成后，订阅导入、节点选择和启动代理步骤与 Windows、Linux 一致，可以直接查看<a href="usage.html">通用图文使用教程</a>。
+            </div>
+        </section>
+
+        <section>
+            <h2>常见问题</h2>
+
+            <div class="warning-box">
+                <strong>⚠️ 无法打开应用？</strong>
+                <p>如果 macOS 阻止应用运行，请前往 系统设置 → 隐私与安全性，允许来自任何来源的应用。</p>
+            </div>
+
+            <div class="warning-box">
+                <strong>⚠️ 性能问题？</strong>
+                <p>如果在 M 系列芯片上运行缓慢，确保你下载的是 arm64 (Apple Silicon) 版本。</p>
+            </div>
+        </section>
+
+        <div class="page-nav">
+            <a href="linux.html">← Linux 安装教程</a>
+            <a href="usage.html">使用教程 →</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>本教程仅供学习交流使用</p>
+        </div>
+    </footer>
+</body>
+</html>
